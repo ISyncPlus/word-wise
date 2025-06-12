@@ -331,7 +331,6 @@ main {
 
 .contact__message {
   width: 70%;
-  height: 100%;
   padding: 2vh 3vh;
   display: block;
   margin-bottom: 4vh;
@@ -412,20 +411,22 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 3em;
     width: 15vh;
     position: fixed;
-    top: 14vh;
-    right: 7vh;
-    height: 10vh;
+    top: 4em;
+    right: 1em;
     z-index: 1110;
-    padding: 7vh 3vh;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sidebar__item {
     text-decoration: none;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   /* Hero section */
@@ -468,7 +469,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 15vh;
+    height: 5vh;
   }
 
   .arrow__item {
@@ -525,8 +526,32 @@ main {
   }
 
   /* Contact form */
+  .contact {
+    top: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 15vh;
+  }
   .form {
-    width: 50%;
+    width: 60%;
+    height: 60%;
+    margin-right: 5em;
+    padding: 1.5em 2em;
+  }
+
+  .input--modifier {
+    margin-right: 10em;
+    width: 90%;
+  }
+
+  .input__placeholder--modifier {
+    transform: translateY(-6px);
+  }
+
+  .contact__close__icon {
+    transform: translateX(5px);
+    font-size: 1.5rem;
   }
 
   /* Footer */
