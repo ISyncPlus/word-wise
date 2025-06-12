@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordWise - Coming Soon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9c9c6f3aee.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="./img/wordwise-logo.png" alt="logo" class="navbar__logo" />
+
+      <!-- hamburger icon & Cancel -->
+      <div id="hamburger" class="hamburger visible--modifier">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <div id="close_ham" class="hamburger invisible--modifier">
+        <i class="fa fa-times"></i>
+      </div>
+      <!-- End -->
+
+      <section class="navbar__items">
+        <a href="#hero" class="btn btn-base">Home</a>
+        <a href="#about" class="btn btn-base">About</a>
+        <a id="navbar__contact" class="btn btn-base">Contact</a>
+      </section>
+    </nav>
+
+    <main class="main">
+      <!-- mobile menu -->
+      <section id="sidebar" class="invisible--modifier">
+        <a href="#hero" class="sidebar__item">Home</a>
+        <a href="#about" class="sidebar__item">About</a>
+        <a id="contact-btn" class="sidebar__item">Contact</a>
+      </section>
+
+      <article id="hero" class="hero invisible">
+        <img
+          src="/img/wordwise-logo.png"
+          alt="logo"
+          class="hero__logo invisible"
+        />
+
+        <h1 class="hero__title invisible">WordWise<span>&trade;</span></h1>
+
+        <!-- bar -->
+        <div class="bar invisible"></div>
+
+        <div class="arrow invisible">
+          <!-- arrow -->
+          <i class="fa fa-arrow-down-long arrow__item"></i>
+        </div>
+
+        <section class="hero__headings invisible">
+          <h1 class="hero__head">COMING SOON</h1>
+          <p class="hero__headline">Learn English Smarter</p>
+        </section>
+      </article>
+
+      <p class="sub-headline invisible">
+        WordWise is launching soon - sign up to be the first to know.
+      </p>
+
+      <section class="notify invisible">
+        <div class="input">
+          <input
+            name="email"
+            type="email"
+            title="email"
+            class="input__value"
+            required
+          />
+          <label for="name" class="input__placeholder">Email Address</label>
+        </div>
+        <button class="btn btn--notify">NOTIFY ME</button>
+      </section>
+
+      <hr class="divider invisible" />
+      <!-- About us -->
+      <section id="about">
+        <h1 class="about__title invisible">About Us</h1>
+        <div class="img__list">
+          <img
+            src="./img/about-1.png"
+            alt="about-1"
+            class="img__item invisible"
+          />
+          <img
+            src="./img/about-2.jpg"
+            alt="about-2"
+            class="img__item invisible"
+          />
+        </div>
+        <p class="about__content invisible">
+          WordWise is an upcoming web and mobile app that helps learners improve
+          their English vocabulary through daily challenges, flashcards,
+          quizzes, and real-life usage examples. Designed for all levels, from
+          beginners to advanced.
+        </p>
+      </section>
+
+      <!-- Contact Us Modal -->
+      <section id="contact" class="contact hidden">
+        <form action="mail.php" method="POST" class="form">
+          <div class="contact__close">
+            <i id="cancel" class="fa fa-xmark contact__close__icon"></i>
+          </div>
+          <h1 class="contact__title">Stay Tuned</h1>
+          <div class="input--modifier">
+            <label for="name" class="input__label">Name </label>
+            <input
+              name="name"
+              type="name"
+              title="name"
+              class="input__value"
+              required
+            />
+            <p class="input__placeholder--modifier">Your Name</p>
+          </div>
+
+          <div class="input--modifier">
+            <label for="email" class="input__label">Email </label>
+            <input
+              name="email"
+              type="email"
+              title="email"
+              class="input__value"
+              required
+            />
+            <p class="input__placeholder--modifier">Enter Email</p>
+          </div>
+
+          <textarea
+            title="message"
+            name="message"
+            id=""
+            rows="5"
+            class="contact__message"
+          ></textarea>
+          <button type="submit" id="submit" class="btn btn-base">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <hr class="divider" />
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="footer__list">
+        <a
+          href="https://www.linkedin.com/in/ebube-ezedimbu"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__item"
+        >
+          <i class="fa fa-facebook"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ebube-ezedimbu"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__item"
+        >
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ebube-ezedimbu"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__item"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </section>
+
+      <p class="footer__right">COPYRIGHT &copy; 2025. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script defer src="/script.js"></script>
+  </body>
+</html>
