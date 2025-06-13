@@ -111,6 +111,7 @@ main {
   align-items: center;
   gap: 5vh;
   width: 45%;
+  background-color: transparent;
 }
 
 .hero__head {
@@ -120,11 +121,13 @@ main {
   white-space: wrap;
   margin: 0;
   text-align: center;
+  background-color: transparent;
 }
 
 .hero__headline {
   font-family: "Syncopate", arial;
   margin: 0;
+  background-color: transparent;
 }
 
 .sub-headline {
